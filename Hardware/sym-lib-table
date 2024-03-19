@@ -1,0 +1,4 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "mx25l12854emi")(type "KiCad")(uri "${KIPRJMOD}/lib/Symbols/mx25l12854emi.kicad_sym")(options "")(descr ""))
+)
