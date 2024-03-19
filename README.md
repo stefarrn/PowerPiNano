@@ -14,6 +14,7 @@ The PowerPiNano is a development Board based on the RP2040 microcontroller, exce
 
 ## Setup
 When the Board is being flashed for the first time after assembly, the BOOT Button needs to be held down while plugging it in in order to put the RP2040 in boot mode. It should then show up as a USB storage device, and flashing any code onto it will also flash the bootloader, such that it will not need to be put into boot mode for future programming.
+
 It is also highly recommended to check all voltage rails aswell as the USB datalines for shorts before plugging a freshly assembled Board in for the first time.
 
 ## Troubleshooting
