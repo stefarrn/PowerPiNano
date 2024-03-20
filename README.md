@@ -6,7 +6,7 @@ The PowerPiNano is a development Board based on the RP2040 microcontroller, exce
 
 ## Pin Description:
 
-#### *general purpose IO pins (GPIO)*
+#### **general purpose IO pins (GPIO)**
 All pins marked with the Öetter "G" are general purpose IO-pins, with the number correspind to the GPIO pin number of the IC
 
 #### optional pull-up/down resistors
