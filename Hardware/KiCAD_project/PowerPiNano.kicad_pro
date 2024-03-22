@@ -407,7 +407,7 @@
     "pinned_symbol_libs": []
   },
   "meta": {
-    "filename": "PowerPiNano.kicad_pro",
+    "filename": "RP2040.kicad_pro",
     "version": 1
   },
   "net_settings": {
