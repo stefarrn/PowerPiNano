@@ -696,6 +696,65 @@
         )
       )
     )
+    (symbol "Device:C_Polarized" (pin_numbers hide) (pin_names (offset 0.254)) (in_bom yes) (on_board yes)
+      (property "Reference" "C" (at 0.635 2.54 0)
+        (effects (font (size 1.27 1.27)) (justify left))
+      )
+      (property "Value" "C_Polarized" (at 0.635 -2.54 0)
+        (effects (font (size 1.27 1.27)) (justify left))
+      )
+      (property "Footprint" "" (at 0.9652 -3.81 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "Datasheet" "~" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "ki_keywords" "cap capacitor" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "ki_description" "Polarized capacitor" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "ki_fp_filters" "CP_*" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (symbol "C_Polarized_0_1"
+        (rectangle (start -2.286 0.508) (end 2.286 1.016)
+          (stroke (width 0) (type default))
+          (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy -1.778 2.286)
+            (xy -0.762 2.286)
+          )
+          (stroke (width 0) (type default))
+          (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy -1.27 2.794)
+            (xy -1.27 1.778)
+          )
+          (stroke (width 0) (type default))
+          (fill (type none))
+        )
+        (rectangle (start 2.286 -0.508) (end -2.286 -1.016)
+          (stroke (width 0) (type default))
+          (fill (type outline))
+        )
+      )
+      (symbol "C_Polarized_1_1"
+        (pin passive line (at 0 3.81 270) (length 2.794)
+          (name "~" (effects (font (size 1.27 1.27))))
+          (number "1" (effects (font (size 1.27 1.27))))
+        )
+        (pin passive line (at 0 -3.81 90) (length 2.794)
+          (name "~" (effects (font (size 1.27 1.27))))
+          (number "2" (effects (font (size 1.27 1.27))))
+        )
+      )
+    )
     (symbol "Device:C_Small" (pin_numbers hide) (pin_names (offset 0.254) hide) (in_bom yes) (on_board yes)
       (property "Reference" "C" (at 0.254 1.778 0)
         (effects (font (size 1.27 1.27)) (justify left))
@@ -1669,9 +1728,6 @@
     )
   )
 
-  (junction (at 53.975 65.405) (diameter 0) (color 0 0 0 0)
-    (uuid 00a43092-22f5-4587-8858-a2cd678c41e8)
-  )
   (junction (at 118.745 49.53) (diameter 0) (color 0 0 0 0)
     (uuid 0693ea75-0864-432c-a850-719ecd044da5)
   )
@@ -1720,7 +1776,7 @@
   (junction (at 213.36 59.69) (diameter 0) (color 0 0 0 0)
     (uuid 8194c6a3-052b-476b-bb12-a8ed0daeb37e)
   )
-  (junction (at 40.64 70.485) (diameter 0) (color 0 0 0 0)
+  (junction (at 40.64 73.025) (diameter 0) (color 0 0 0 0)
     (uuid 85e08c8a-b31b-4f0c-82b5-afcea2b56c7a)
   )
   (junction (at 95.885 81.28) (diameter 0) (color 0 0 0 0)
@@ -1749,6 +1805,9 @@
   )
   (junction (at 76.2 137.16) (diameter 0) (color 0 0 0 0)
     (uuid c738b69e-bd29-4f26-b7cd-94f3ddcf106c)
+  )
+  (junction (at 53.975 65.405) (diameter 0) (color 0 0 0 0)
+    (uuid ccaca18f-0c29-40fc-bf5f-781f33d89d24)
   )
   (junction (at 41.91 129.54) (diameter 0) (color 0 0 0 0)
     (uuid d1552a89-16ba-4d85-adb7-fd74e0597e8f)
@@ -1968,6 +2027,10 @@
     (stroke (width 0) (type default))
     (uuid 602e786c-3e61-4311-a5ba-75730519dd57)
   )
+  (wire (pts (xy 40.64 73.025) (xy 40.64 70.485))
+    (stroke (width 0) (type default))
+    (uuid 60613475-6df3-4c1b-a39b-eb477718567d)
+  )
   (wire (pts (xy 191.135 111.125) (xy 194.945 111.125))
     (stroke (width 0) (type default))
     (uuid 626a61fc-3446-421e-b301-e1f0ec17f0a1)
@@ -2177,7 +2240,7 @@
     (stroke (width 0) (type default))
     (uuid c09baf3f-a972-4fa3-b67e-3f94bda323df)
   )
-  (wire (pts (xy 27.94 70.485) (xy 40.64 70.485))
+  (wire (pts (xy 27.94 73.025) (xy 40.64 73.025))
     (stroke (width 0) (type default))
     (uuid c2d23eb9-8e29-4c93-a32b-5cfb739054ee)
   )
@@ -2185,7 +2248,7 @@
     (stroke (width 0) (type default))
     (uuid c432b774-6fd0-470c-9679-093b0ab12db3)
   )
-  (wire (pts (xy 40.64 70.485) (xy 53.975 70.485))
+  (wire (pts (xy 40.64 73.025) (xy 53.975 73.025))
     (stroke (width 0) (type default))
     (uuid c5a4117a-35a3-4cd1-8a4d-0f975c4c1389)
   )
@@ -3167,7 +3230,7 @@
     )
     (pin "1" (uuid 8fac3ca7-4a1e-43f8-b67b-92199ff1e065))
     (instances
-      (project "RP2040"
+      (project "PowerPiNano"
         (path "/00f9855a-60f7-41bf-8963-f0bf2846d4ef"
           (reference "#PWR024") (unit 1)
         )
@@ -3209,7 +3272,7 @@
     (pin "3" (uuid d21d11ce-77ca-4733-9762-a33f2e1c4a90))
     (pin "11" (uuid ca7e7ae9-9f6c-40dd-bb85-48b07846436e))
     (instances
-      (project "RP2040"
+      (project "PowerPiNano"
         (path "/00f9855a-60f7-41bf-8963-f0bf2846d4ef"
           (reference "J4") (unit 1)
         )
@@ -3235,7 +3298,7 @@
     (pin "1" (uuid 8d291200-a749-454e-8af6-a075b5cda462))
     (pin "2" (uuid 588aa2f5-3517-47e8-ba0a-756544858f81))
     (instances
-      (project "RP2040"
+      (project "PowerPiNano"
         (path "/00f9855a-60f7-41bf-8963-f0bf2846d4ef"
           (reference "D1") (unit 1)
         )
@@ -3260,7 +3323,7 @@
     )
     (pin "1" (uuid cf751a95-09b2-4f13-ba62-1c0a4442eeb9))
     (instances
-      (project "RP2040"
+      (project "PowerPiNano"
         (path "/00f9855a-60f7-41bf-8963-f0bf2846d4ef"
           (reference "TP3") (unit 1)
         )
@@ -3341,7 +3404,7 @@
     (pin "6" (uuid 9152f819-eb86-45dc-ba62-fb21ec6bd408))
     (pin "16" (uuid fa41e34a-cf1c-440d-97d1-39232c295c1f))
     (instances
-      (project "RP2040"
+      (project "PowerPiNano"
         (path "/00f9855a-60f7-41bf-8963-f0bf2846d4ef"
           (reference "U1") (unit 1)
         )
@@ -3366,9 +3429,35 @@
     )
     (pin "1" (uuid 241bcab2-bf39-4d34-80f3-10c994307da3))
     (instances
-      (project "RP2040"
+      (project "PowerPiNano"
         (path "/00f9855a-60f7-41bf-8963-f0bf2846d4ef"
           (reference "#PWR037") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "Device:C_Polarized") (at 27.94 69.215 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid 0b9d0377-f7f6-4537-a2d3-56f10b97ba8d)
+    (property "Reference" "C10" (at 20.32 67.945 0)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Value" "10µF" (at 19.685 70.485 0)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Footprint" "Capacitor_SMD:CP_Elec_4x3" (at 28.9052 73.025 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "~" (at 27.94 69.215 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid ced05ba3-2f31-466c-8f47-ce4d63917974))
+    (pin "2" (uuid 1f4cab48-dc70-4912-be20-621b49499066))
+    (instances
+      (project "PowerPiNano"
+        (path "/00f9855a-60f7-41bf-8963-f0bf2846d4ef"
+          (reference "C10") (unit 1)
         )
       )
     )
@@ -3392,7 +3481,7 @@
     (pin "1" (uuid ef8e5041-9fc5-49eb-b494-64b580ed1a67))
     (pin "2" (uuid ba9a09e2-ce1e-48f6-9727-a24dbcfc3fbb))
     (instances
-      (project "RP2040"
+      (project "PowerPiNano"
         (path "/00f9855a-60f7-41bf-8963-f0bf2846d4ef"
           (reference "R14") (unit 1)
         )
@@ -3422,7 +3511,7 @@
     (pin "1" (uuid 0b228cbd-0875-47cd-90bc-69fe8c0ba9ba))
     (pin "5" (uuid 2c1db623-55a9-4998-bed3-f3270aaf41b7))
     (instances
-      (project "RP2040"
+      (project "PowerPiNano"
         (path "/00f9855a-60f7-41bf-8963-f0bf2846d4ef"
           (reference "J2") (unit 1)
         )
@@ -3448,7 +3537,7 @@
     (pin "1" (uuid 97aa004c-0a65-4ceb-b72a-21528c93c3d3))
     (pin "2" (uuid 329f04db-111a-48aa-9ca7-17d45601f3b4))
     (instances
-      (project "RP2040"
+      (project "PowerPiNano"
         (path "/00f9855a-60f7-41bf-8963-f0bf2846d4ef"
           (reference "C6") (unit 1)
         )
@@ -3473,7 +3562,7 @@
     )
     (pin "1" (uuid 541b8d07-9ee8-4e24-a3b8-9726ebba0d68))
     (instances
-      (project "RP2040"
+      (project "PowerPiNano"
         (path "/00f9855a-60f7-41bf-8963-f0bf2846d4ef"
           (reference "#PWR018") (unit 1)
         )
@@ -3481,24 +3570,24 @@
     )
   )
 
-  (symbol (lib_id "power:GND") (at 40.64 70.485 0) (unit 1)
+  (symbol (lib_id "power:GND") (at 40.64 73.025 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 1267440d-8e43-4e2c-8cf1-820ec7989ab8)
-    (property "Reference" "#PWR013" (at 40.64 76.835 0)
+    (property "Reference" "#PWR013" (at 40.64 79.375 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Value" "GND" (at 40.64 75.565 0)
+    (property "Value" "GND" (at 40.64 78.105 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "" (at 40.64 70.485 0)
+    (property "Footprint" "" (at 40.64 73.025 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "" (at 40.64 70.485 0)
+    (property "Datasheet" "" (at 40.64 73.025 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 6803f744-3ab8-4c6b-9c69-d39694d57686))
     (instances
-      (project "RP2040"
+      (project "PowerPiNano"
         (path "/00f9855a-60f7-41bf-8963-f0bf2846d4ef"
           (reference "#PWR013") (unit 1)
         )
@@ -3523,7 +3612,7 @@
     )
     (pin "1" (uuid 6172b404-319a-4f11-837a-fcb03632a934))
     (instances
-      (project "RP2040"
+      (project "PowerPiNano"
         (path "/00f9855a-60f7-41bf-8963-f0bf2846d4ef"
           (reference "#PWR022") (unit 1)
         )
@@ -3550,7 +3639,7 @@
     (pin "2" (uuid a132fd18-f60d-4d06-b069-b9d1d7c1bb40))
     (pin "3" (uuid 50c21cf0-c9ab-4892-8f76-3311e73ea841))
     (instances
-      (project "RP2040"
+      (project "PowerPiNano"
         (path "/00f9855a-60f7-41bf-8963-f0bf2846d4ef"
           (reference "Q5") (unit 1)
         )
@@ -3576,7 +3665,7 @@
     (pin "1" (uuid d0f7ecb1-f46f-4410-be19-c55165972efe))
     (pin "2" (uuid e1cd4d6d-17f5-48d8-9b85-4b1b79939006))
     (instances
-      (project "RP2040"
+      (project "PowerPiNano"
         (path "/00f9855a-60f7-41bf-8963-f0bf2846d4ef"
           (reference "C2") (unit 1)
         )
@@ -3601,7 +3690,7 @@
     )
     (pin "1" (uuid 9da6fc9f-cfc6-411e-9015-7f6f7a58d196))
     (instances
-      (project "RP2040"
+      (project "PowerPiNano"
         (path "/00f9855a-60f7-41bf-8963-f0bf2846d4ef"
           (reference "#PWR06") (unit 1)
         )
@@ -3626,7 +3715,7 @@
     )
     (pin "1" (uuid 797c3bbe-117e-4ce1-a51c-8e8885dc7174))
     (instances
-      (project "RP2040"
+      (project "PowerPiNano"
         (path "/00f9855a-60f7-41bf-8963-f0bf2846d4ef"
           (reference "#PWR034") (unit 1)
         )
@@ -3651,7 +3740,7 @@
     )
     (pin "1" (uuid 5e67f9d0-cc4c-495d-843a-2f7d7b8ca930))
     (instances
-      (project "RP2040"
+      (project "PowerPiNano"
         (path "/00f9855a-60f7-41bf-8963-f0bf2846d4ef"
           (reference "#PWR04") (unit 1)
         )
@@ -3681,7 +3770,7 @@
     (pin "4" (uuid 9f9133d2-7bb0-4faf-b96b-b7d1ac5f7470))
     (pin "3" (uuid 2aaa9174-e899-4ca3-b405-7671a4ae394f))
     (instances
-      (project "RP2040"
+      (project "PowerPiNano"
         (path "/00f9855a-60f7-41bf-8963-f0bf2846d4ef"
           (reference "J3") (unit 1)
         )
@@ -3707,7 +3796,7 @@
     (pin "1" (uuid db79ce6e-c8bc-481a-93e4-03cd645a52f6))
     (pin "2" (uuid 74b9382f-f868-41b8-aa1d-3488f969b6e3))
     (instances
-      (project "RP2040"
+      (project "PowerPiNano"
         (path "/00f9855a-60f7-41bf-8963-f0bf2846d4ef"
           (reference "R13") (unit 1)
         )
@@ -3732,7 +3821,7 @@
     )
     (pin "1" (uuid f22ff2d6-1329-47ce-949b-91196099ed0c))
     (instances
-      (project "RP2040"
+      (project "PowerPiNano"
         (path "/00f9855a-60f7-41bf-8963-f0bf2846d4ef"
           (reference "#PWR015") (unit 1)
         )
@@ -3757,7 +3846,7 @@
     )
     (pin "1" (uuid 450f26b0-1073-4ccf-9461-4c4c20a44d4b))
     (instances
-      (project "RP2040"
+      (project "PowerPiNano"
         (path "/00f9855a-60f7-41bf-8963-f0bf2846d4ef"
           (reference "#PWR010") (unit 1)
         )
@@ -3783,7 +3872,7 @@
     (pin "1" (uuid 2ef10f9f-5e41-4003-8d90-4f9ad77e20fc))
     (pin "2" (uuid eb544b2d-8368-4ba2-a943-093a5476b96d))
     (instances
-      (project "RP2040"
+      (project "PowerPiNano"
         (path "/00f9855a-60f7-41bf-8963-f0bf2846d4ef"
           (reference "R15") (unit 1)
         )
@@ -3810,7 +3899,7 @@
     (pin "2" (uuid 8c43151d-deb0-4f1b-bb86-3dae0d650653))
     (pin "3" (uuid a6a27247-461b-4883-9697-bb131fafb0b6))
     (instances
-      (project "RP2040"
+      (project "PowerPiNano"
         (path "/00f9855a-60f7-41bf-8963-f0bf2846d4ef"
           (reference "Q2") (unit 1)
         )
@@ -3835,7 +3924,7 @@
     )
     (pin "1" (uuid cc743f66-88a2-47c2-9e4a-3d90d671ad65))
     (instances
-      (project "RP2040"
+      (project "PowerPiNano"
         (path "/00f9855a-60f7-41bf-8963-f0bf2846d4ef"
           (reference "#PWR039") (unit 1)
         )
@@ -3860,7 +3949,7 @@
     )
     (pin "1" (uuid 683d1354-367c-461b-8845-b729f3b36d5d))
     (instances
-      (project "RP2040"
+      (project "PowerPiNano"
         (path "/00f9855a-60f7-41bf-8963-f0bf2846d4ef"
           (reference "#PWR017") (unit 1)
         )
@@ -3886,7 +3975,7 @@
     (pin "1" (uuid ca447c2c-7e10-4e1d-a29c-ab65f1716077))
     (pin "2" (uuid ea25338a-ccdb-418e-b7fa-20edca36fb0b))
     (instances
-      (project "RP2040"
+      (project "PowerPiNano"
         (path "/00f9855a-60f7-41bf-8963-f0bf2846d4ef"
           (reference "R18") (unit 1)
         )
@@ -3912,7 +4001,7 @@
     (pin "1" (uuid 92d21077-15ca-4fd2-a979-a825165ce124))
     (pin "2" (uuid fb4e69bc-1dcc-4cbd-8cf4-a3573c36d1d8))
     (instances
-      (project "RP2040"
+      (project "PowerPiNano"
         (path "/00f9855a-60f7-41bf-8963-f0bf2846d4ef"
           (reference "R6") (unit 1)
         )
@@ -3938,7 +4027,7 @@
     (pin "1" (uuid 0fa57552-fef5-4b08-9c6f-69bf5385bf87))
     (pin "2" (uuid 903c0ec0-b6b6-4330-9d55-7712fad7f028))
     (instances
-      (project "RP2040"
+      (project "PowerPiNano"
         (path "/00f9855a-60f7-41bf-8963-f0bf2846d4ef"
           (reference "C8") (unit 1)
         )
@@ -3963,7 +4052,7 @@
     )
     (pin "1" (uuid 28e8c438-4334-4953-9812-7871b594ccbe))
     (instances
-      (project "RP2040"
+      (project "PowerPiNano"
         (path "/00f9855a-60f7-41bf-8963-f0bf2846d4ef"
           (reference "#PWR038") (unit 1)
         )
@@ -3989,7 +4078,7 @@
     (pin "1" (uuid adc26c17-0efc-4bb6-8fcf-48566de23331))
     (pin "2" (uuid b3cb8929-9d22-49ec-bfd0-0b3c0888ed0a))
     (instances
-      (project "RP2040"
+      (project "PowerPiNano"
         (path "/00f9855a-60f7-41bf-8963-f0bf2846d4ef"
           (reference "R16") (unit 1)
         )
@@ -4015,7 +4104,7 @@
     (pin "1" (uuid d2ea3a34-9277-4b08-ae49-35c124e43dbb))
     (pin "2" (uuid 48641963-05e5-4f8c-ad27-fff304c00a04))
     (instances
-      (project "RP2040"
+      (project "PowerPiNano"
         (path "/00f9855a-60f7-41bf-8963-f0bf2846d4ef"
           (reference "R1") (unit 1)
         )
@@ -4041,7 +4130,7 @@
     (pin "1" (uuid 0b8f9f7c-d7fd-47fa-8937-346e6d090e81))
     (pin "2" (uuid 5e5785d5-43b9-4de5-b220-6bf5405e483b))
     (instances
-      (project "RP2040"
+      (project "PowerPiNano"
         (path "/00f9855a-60f7-41bf-8963-f0bf2846d4ef"
           (reference "R12") (unit 1)
         )
@@ -4066,7 +4155,7 @@
     )
     (pin "1" (uuid a5ae7710-592a-43d2-a81a-1d12a1641d31))
     (instances
-      (project "RP2040"
+      (project "PowerPiNano"
         (path "/00f9855a-60f7-41bf-8963-f0bf2846d4ef"
           (reference "#PWR041") (unit 1)
         )
@@ -4108,7 +4197,7 @@
     (pin "3" (uuid e079d8c3-0b88-4f16-9dc9-452cbcfc8f3c))
     (pin "11" (uuid d52cee07-142e-4a82-8914-b1552bbad37d))
     (instances
-      (project "RP2040"
+      (project "PowerPiNano"
         (path "/00f9855a-60f7-41bf-8963-f0bf2846d4ef"
           (reference "J5") (unit 1)
         )
@@ -4134,7 +4223,7 @@
     (pin "1" (uuid db306175-4a4a-4aad-bf34-77a0477d3374))
     (pin "2" (uuid 0e7ca2a4-eac6-4d9e-87ce-d47797d0ac07))
     (instances
-      (project "RP2040"
+      (project "PowerPiNano"
         (path "/00f9855a-60f7-41bf-8963-f0bf2846d4ef"
           (reference "C7") (unit 1)
         )
@@ -4161,7 +4250,7 @@
     (pin "2" (uuid 303b1715-2f7a-459c-a786-4cb632a0ca82))
     (pin "3" (uuid bcc2f21d-bd33-4dfc-94ea-da0aeef2c1e2))
     (instances
-      (project "RP2040"
+      (project "PowerPiNano"
         (path "/00f9855a-60f7-41bf-8963-f0bf2846d4ef"
           (reference "Q6") (unit 1)
         )
@@ -4186,7 +4275,7 @@
     )
     (pin "1" (uuid 78ea3b22-3f16-487f-aed7-d00f975b3bde))
     (instances
-      (project "RP2040"
+      (project "PowerPiNano"
         (path "/00f9855a-60f7-41bf-8963-f0bf2846d4ef"
           (reference "#PWR030") (unit 1)
         )
@@ -4197,7 +4286,7 @@
   (symbol (lib_id "Device:C_Small") (at 44.45 129.54 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 65b773f1-40e6-48a2-9370-ed8c15ad9e61)
-    (property "Reference" "C14" (at 46.355 126.365 90)
+    (property "Reference" "C12" (at 46.355 126.365 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "100nF" (at 45.72 128.27 90)
@@ -4212,9 +4301,9 @@
     (pin "1" (uuid d01ae980-5ff9-403e-a04c-6a26add88631))
     (pin "2" (uuid f5e4a0ba-815b-497c-8771-e4fc4fd906d0))
     (instances
-      (project "RP2040"
+      (project "PowerPiNano"
         (path "/00f9855a-60f7-41bf-8963-f0bf2846d4ef"
-          (reference "C14") (unit 1)
+          (reference "C12") (unit 1)
         )
       )
     )
@@ -4244,7 +4333,7 @@
     (pin "4" (uuid d10bda1a-c092-4d6a-b200-88338b948278))
     (pin "2" (uuid dfcdc4d0-f09c-4493-b23f-453c54b155a0))
     (instances
-      (project "RP2040"
+      (project "PowerPiNano"
         (path "/00f9855a-60f7-41bf-8963-f0bf2846d4ef"
           (reference "U2") (unit 1)
         )
@@ -4270,7 +4359,7 @@
     (pin "1" (uuid c5852ef3-2ddf-410a-aa7f-a6c19931939d))
     (pin "2" (uuid 3d9ff135-4cb9-4cb6-80ea-2a559d3a4118))
     (instances
-      (project "RP2040"
+      (project "PowerPiNano"
         (path "/00f9855a-60f7-41bf-8963-f0bf2846d4ef"
           (reference "D9") (unit 1)
         )
@@ -4296,7 +4385,7 @@
     (pin "1" (uuid 99f43699-3e1f-4c05-bf1a-632725a41d3f))
     (pin "2" (uuid 5f432568-7bf2-4d83-8cde-f848d2bfe184))
     (instances
-      (project "RP2040"
+      (project "PowerPiNano"
         (path "/00f9855a-60f7-41bf-8963-f0bf2846d4ef"
           (reference "R3") (unit 1)
         )
@@ -4321,7 +4410,7 @@
     )
     (pin "1" (uuid a4934294-967c-488d-a281-0c064938a456))
     (instances
-      (project "RP2040"
+      (project "PowerPiNano"
         (path "/00f9855a-60f7-41bf-8963-f0bf2846d4ef"
           (reference "#PWR012") (unit 1)
         )
@@ -4346,7 +4435,7 @@
     )
     (pin "1" (uuid 5e69ee8b-3565-430f-9e92-d20579fc5b37))
     (instances
-      (project "RP2040"
+      (project "PowerPiNano"
         (path "/00f9855a-60f7-41bf-8963-f0bf2846d4ef"
           (reference "#PWR021") (unit 1)
         )
@@ -4371,7 +4460,7 @@
     )
     (pin "1" (uuid 65294ac0-4a15-4275-89a5-a1aeee76e35f))
     (instances
-      (project "RP2040"
+      (project "PowerPiNano"
         (path "/00f9855a-60f7-41bf-8963-f0bf2846d4ef"
           (reference "#PWR019") (unit 1)
         )
@@ -4397,7 +4486,7 @@
     (pin "1" (uuid a13eb8bf-a03e-4520-8458-26d8909d018c))
     (pin "2" (uuid d99efcfc-33d7-491d-bc12-bdb74bb4fc13))
     (instances
-      (project "RP2040"
+      (project "PowerPiNano"
         (path "/00f9855a-60f7-41bf-8963-f0bf2846d4ef"
           (reference "R21") (unit 1)
         )
@@ -4423,7 +4512,7 @@
     (pin "1" (uuid e6c8e18e-20a2-474d-9848-4e36d6c4eb23))
     (pin "2" (uuid 37436886-a2b3-4d9e-b4b9-fa413b25febc))
     (instances
-      (project "RP2040"
+      (project "PowerPiNano"
         (path "/00f9855a-60f7-41bf-8963-f0bf2846d4ef"
           (reference "R17") (unit 1)
         )
@@ -4450,7 +4539,7 @@
     (pin "2" (uuid c201662e-c76b-44ae-8247-15224caa735c))
     (pin "3" (uuid 38e30102-3e26-44ee-ab2a-de49ea482d91))
     (instances
-      (project "RP2040"
+      (project "PowerPiNano"
         (path "/00f9855a-60f7-41bf-8963-f0bf2846d4ef"
           (reference "Q1") (unit 1)
         )
@@ -4475,7 +4564,7 @@
     )
     (pin "1" (uuid 51031ccc-d3bb-4862-8bfb-e305a8eb4e61))
     (instances
-      (project "RP2040"
+      (project "PowerPiNano"
         (path "/00f9855a-60f7-41bf-8963-f0bf2846d4ef"
           (reference "#PWR036") (unit 1)
         )
@@ -4500,7 +4589,7 @@
     )
     (pin "1" (uuid 31da1fff-fddb-452e-80c6-9fd810114398))
     (instances
-      (project "RP2040"
+      (project "PowerPiNano"
         (path "/00f9855a-60f7-41bf-8963-f0bf2846d4ef"
           (reference "#PWR033") (unit 1)
         )
@@ -4526,7 +4615,7 @@
     (pin "1" (uuid 111fb519-b630-408f-b7d4-748ec6eed8ef))
     (pin "2" (uuid 909ce5f9-e2c0-4630-8f2c-bb93c1aedb5c))
     (instances
-      (project "RP2040"
+      (project "PowerPiNano"
         (path "/00f9855a-60f7-41bf-8963-f0bf2846d4ef"
           (reference "C9") (unit 1)
         )
@@ -4551,7 +4640,7 @@
     )
     (pin "1" (uuid 14106a18-fe37-41bb-8d37-45ea44dc2389))
     (instances
-      (project "RP2040"
+      (project "PowerPiNano"
         (path "/00f9855a-60f7-41bf-8963-f0bf2846d4ef"
           (reference "#PWR03") (unit 1)
         )
@@ -4578,7 +4667,7 @@
     (pin "2" (uuid 72f6a13c-16e6-4513-8c3d-f20808c94126))
     (pin "3" (uuid 8861ade4-5b7c-495e-bc4d-f954862297b4))
     (instances
-      (project "RP2040"
+      (project "PowerPiNano"
         (path "/00f9855a-60f7-41bf-8963-f0bf2846d4ef"
           (reference "Q3") (unit 1)
         )
@@ -4603,7 +4692,7 @@
     )
     (pin "1" (uuid 310abe24-621e-40cc-b8a5-255f6134a5ac))
     (instances
-      (project "RP2040"
+      (project "PowerPiNano"
         (path "/00f9855a-60f7-41bf-8963-f0bf2846d4ef"
           (reference "#PWR023") (unit 1)
         )
@@ -4630,7 +4719,7 @@
     (pin "2" (uuid e7f136c3-342c-4d3f-9dfb-ed24664577cf))
     (pin "3" (uuid 2bc911eb-f1e1-4e54-8c29-b094d2ff8652))
     (instances
-      (project "RP2040"
+      (project "PowerPiNano"
         (path "/00f9855a-60f7-41bf-8963-f0bf2846d4ef"
           (reference "Q7") (unit 1)
         )
@@ -4656,7 +4745,7 @@
     (pin "1" (uuid 2e3a881b-c8ae-45b8-8258-67a5eb4372a2))
     (pin "2" (uuid 5f5f3596-5655-465b-876a-b7da176ccf97))
     (instances
-      (project "RP2040"
+      (project "PowerPiNano"
         (path "/00f9855a-60f7-41bf-8963-f0bf2846d4ef"
           (reference "R23") (unit 1)
         )
@@ -4681,7 +4770,7 @@
     )
     (pin "1" (uuid 7bda8c74-e737-44cc-8fe6-374eacd7c40d))
     (instances
-      (project "RP2040"
+      (project "PowerPiNano"
         (path "/00f9855a-60f7-41bf-8963-f0bf2846d4ef"
           (reference "#PWR027") (unit 1)
         )
@@ -4707,7 +4796,7 @@
     (pin "1" (uuid e4d40c41-03e2-448e-873c-8ac1f9371479))
     (pin "2" (uuid b5fe2303-b802-4d70-975e-fa23eccf5783))
     (instances
-      (project "RP2040"
+      (project "PowerPiNano"
         (path "/00f9855a-60f7-41bf-8963-f0bf2846d4ef"
           (reference "R8") (unit 1)
         )
@@ -4734,7 +4823,7 @@
     (pin "2" (uuid 897a25dc-ed96-4d33-85ef-2f09028a2710))
     (pin "3" (uuid 157b65a5-30a4-4c03-a601-cadf0c992da0))
     (instances
-      (project "RP2040"
+      (project "PowerPiNano"
         (path "/00f9855a-60f7-41bf-8963-f0bf2846d4ef"
           (reference "Q4") (unit 1)
         )
@@ -4760,7 +4849,7 @@
     (pin "1" (uuid 52869f28-22ef-48a7-9144-12f1955d6b6c))
     (pin "2" (uuid ea32d7df-8e4e-4521-9ee7-78bc0fe067d7))
     (instances
-      (project "RP2040"
+      (project "PowerPiNano"
         (path "/00f9855a-60f7-41bf-8963-f0bf2846d4ef"
           (reference "R19") (unit 1)
         )
@@ -4786,7 +4875,7 @@
     (pin "1" (uuid 00d973c3-ad5b-46f1-935c-fff5cb2e696e))
     (pin "2" (uuid 2f8572b3-ced8-40d7-87ce-5c9522a28570))
     (instances
-      (project "RP2040"
+      (project "PowerPiNano"
         (path "/00f9855a-60f7-41bf-8963-f0bf2846d4ef"
           (reference "R7") (unit 1)
         )
@@ -4812,9 +4901,35 @@
     (pin "2" (uuid 72a0b773-305e-4fba-befc-321e5db4a450))
     (pin "1" (uuid 72c1505f-e55f-4981-9c7b-867c360192df))
     (instances
-      (project "RP2040"
+      (project "PowerPiNano"
         (path "/00f9855a-60f7-41bf-8963-f0bf2846d4ef"
           (reference "R5") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "Device:C_Polarized") (at 53.975 69.215 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid 8dd3e43d-467d-4f17-acde-65dc5d8b586e)
+    (property "Reference" "C11" (at 47.625 67.945 0)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Value" "10µF" (at 45.72 70.485 0)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Footprint" "Capacitor_SMD:CP_Elec_4x3" (at 54.9402 73.025 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "~" (at 53.975 69.215 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 3e8774ef-72ef-4acb-b031-76f80a0272db))
+    (pin "2" (uuid 4f4a1d48-7360-4550-b87c-cc6ccb698c75))
+    (instances
+      (project "PowerPiNano"
+        (path "/00f9855a-60f7-41bf-8963-f0bf2846d4ef"
+          (reference "C11") (unit 1)
         )
       )
     )
@@ -4838,7 +4953,7 @@
     (pin "1" (uuid 7eca2ba7-8c84-4a2e-9bce-2a03495bd390))
     (pin "2" (uuid 725e5727-c476-41e5-b12e-6c0a35916a9a))
     (instances
-      (project "RP2040"
+      (project "PowerPiNano"
         (path "/00f9855a-60f7-41bf-8963-f0bf2846d4ef"
           (reference "D7") (unit 1)
         )
@@ -4865,7 +4980,7 @@
     (pin "3" (uuid 41a7bf74-a45c-4ffc-b96b-b2f826609c63))
     (pin "2" (uuid 38451d6b-0391-4481-b4d6-1f2f7b7cf975))
     (instances
-      (project "RP2040"
+      (project "PowerPiNano"
         (path "/00f9855a-60f7-41bf-8963-f0bf2846d4ef"
           (reference "U3") (unit 1)
         )
@@ -4890,7 +5005,7 @@
     )
     (pin "1" (uuid 265488ab-cbf7-475b-8a38-fa5b41c6dd69))
     (instances
-      (project "RP2040"
+      (project "PowerPiNano"
         (path "/00f9855a-60f7-41bf-8963-f0bf2846d4ef"
           (reference "#PWR020") (unit 1)
         )
@@ -4916,7 +5031,7 @@
     (pin "1" (uuid 6694e2b3-0674-4d19-8e03-861ff849ce65))
     (pin "2" (uuid 1ceff081-5dd3-4b53-9b76-804f6309649c))
     (instances
-      (project "RP2040"
+      (project "PowerPiNano"
         (path "/00f9855a-60f7-41bf-8963-f0bf2846d4ef"
           (reference "C1") (unit 1)
         )
@@ -4942,7 +5057,7 @@
     (pin "1" (uuid 1c99850f-1f4c-453e-aa03-3b3225a71b2e))
     (pin "2" (uuid 66052ae1-1899-4fae-b7d4-bce53fe01fd5))
     (instances
-      (project "RP2040"
+      (project "PowerPiNano"
         (path "/00f9855a-60f7-41bf-8963-f0bf2846d4ef"
           (reference "D5") (unit 1)
         )
@@ -4967,7 +5082,7 @@
     )
     (pin "1" (uuid 3182d52a-9c39-48ff-9b1a-f82c79759486))
     (instances
-      (project "RP2040"
+      (project "PowerPiNano"
         (path "/00f9855a-60f7-41bf-8963-f0bf2846d4ef"
           (reference "#PWR014") (unit 1)
         )
@@ -4993,7 +5108,7 @@
     (pin "2" (uuid 55c440fa-da0d-41aa-9ea0-178a83f81e13))
     (pin "1" (uuid 6b228422-73da-4d22-bb70-bc9b0ddb2e8d))
     (instances
-      (project "RP2040"
+      (project "PowerPiNano"
         (path "/00f9855a-60f7-41bf-8963-f0bf2846d4ef"
           (reference "R4") (unit 1)
         )
@@ -5019,7 +5134,7 @@
     (pin "1" (uuid a2d7bb7f-fc7a-448d-ab99-961787e46acd))
     (pin "2" (uuid ae03479e-7397-408d-9494-b81582417954))
     (instances
-      (project "RP2040"
+      (project "PowerPiNano"
         (path "/00f9855a-60f7-41bf-8963-f0bf2846d4ef"
           (reference "D4") (unit 1)
         )
@@ -5045,7 +5160,7 @@
     (pin "1" (uuid 12fa7b3c-b1ae-4d89-9993-4eb25de3dc6a))
     (pin "2" (uuid 370f0306-635d-417c-ace6-c6e1d2b2f8d1))
     (instances
-      (project "RP2040"
+      (project "PowerPiNano"
         (path "/00f9855a-60f7-41bf-8963-f0bf2846d4ef"
           (reference "R20") (unit 1)
         )
@@ -5071,7 +5186,7 @@
     (pin "2" (uuid 02c3605b-8c00-4a85-b13e-6b45b6efa40b))
     (pin "1" (uuid 19fa3ac0-a5f3-43f2-8844-3ff5944d40ad))
     (instances
-      (project "RP2040"
+      (project "PowerPiNano"
         (path "/00f9855a-60f7-41bf-8963-f0bf2846d4ef"
           (reference "J1") (unit 1)
         )
@@ -5096,7 +5211,7 @@
     )
     (pin "1" (uuid d51c4c50-e47b-4277-906a-abbfdde776e2))
     (instances
-      (project "RP2040"
+      (project "PowerPiNano"
         (path "/00f9855a-60f7-41bf-8963-f0bf2846d4ef"
           (reference "#PWR031") (unit 1)
         )
@@ -5121,7 +5236,7 @@
     )
     (pin "1" (uuid 3fa58c5e-4e20-423e-9d86-d63d5496f50c))
     (instances
-      (project "RP2040"
+      (project "PowerPiNano"
         (path "/00f9855a-60f7-41bf-8963-f0bf2846d4ef"
           (reference "#PWR08") (unit 1)
         )
@@ -5146,7 +5261,7 @@
     )
     (pin "1" (uuid 68eba4ce-517c-4053-89ef-5aa48babb608))
     (instances
-      (project "RP2040"
+      (project "PowerPiNano"
         (path "/00f9855a-60f7-41bf-8963-f0bf2846d4ef"
           (reference "#PWR035") (unit 1)
         )
@@ -5172,7 +5287,7 @@
     (pin "1" (uuid 97d2e8a5-164f-4ab1-8c79-30011836164d))
     (pin "2" (uuid cdbbb551-9aa5-4c93-a354-0a03bdc8c45d))
     (instances
-      (project "RP2040"
+      (project "PowerPiNano"
         (path "/00f9855a-60f7-41bf-8963-f0bf2846d4ef"
           (reference "R11") (unit 1)
         )
@@ -5202,7 +5317,7 @@
     (pin "4" (uuid 40129c99-8994-4949-95da-464e7ef9a242))
     (pin "3" (uuid 1d7f8eee-8aa8-465c-baf3-15f43ca7d306))
     (instances
-      (project "RP2040"
+      (project "PowerPiNano"
         (path "/00f9855a-60f7-41bf-8963-f0bf2846d4ef"
           (reference "J6") (unit 1)
         )
@@ -5227,7 +5342,7 @@
     )
     (pin "1" (uuid 02ae2747-91cf-4fa1-9f9a-fc68f5c6697a))
     (instances
-      (project "RP2040"
+      (project "PowerPiNano"
         (path "/00f9855a-60f7-41bf-8963-f0bf2846d4ef"
           (reference "#PWR032") (unit 1)
         )
@@ -5253,7 +5368,7 @@
     (pin "1" (uuid 54aaa54e-dc25-4e2c-b433-ff22a925d184))
     (pin "2" (uuid c81024d7-1704-45fc-89e9-fc5e0b98e668))
     (instances
-      (project "RP2040"
+      (project "PowerPiNano"
         (path "/00f9855a-60f7-41bf-8963-f0bf2846d4ef"
           (reference "D8") (unit 1)
         )
@@ -5278,7 +5393,7 @@
     )
     (pin "1" (uuid ed1e95cb-66b6-412f-8434-131e608fa6ed))
     (instances
-      (project "RP2040"
+      (project "PowerPiNano"
         (path "/00f9855a-60f7-41bf-8963-f0bf2846d4ef"
           (reference "#PWR026") (unit 1)
         )
@@ -5303,7 +5418,7 @@
     )
     (pin "1" (uuid cfd498f6-2578-41ba-9b80-0d81066c59c5))
     (instances
-      (project "RP2040"
+      (project "PowerPiNano"
         (path "/00f9855a-60f7-41bf-8963-f0bf2846d4ef"
           (reference "#PWR028") (unit 1)
         )
@@ -5328,7 +5443,7 @@
     )
     (pin "1" (uuid 0754739e-3522-4d05-9313-bc7540a99b95))
     (instances
-      (project "RP2040"
+      (project "PowerPiNano"
         (path "/00f9855a-60f7-41bf-8963-f0bf2846d4ef"
           (reference "#PWR025") (unit 1)
         )
@@ -5353,35 +5468,9 @@
     )
     (pin "1" (uuid f2d0ac3f-583d-4e7f-b07e-e0b4772e636b))
     (instances
-      (project "RP2040"
+      (project "PowerPiNano"
         (path "/00f9855a-60f7-41bf-8963-f0bf2846d4ef"
           (reference "#PWR01") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Device:C_Small") (at 27.94 67.945 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid be7e3395-4aae-4878-a328-6b4b884661f6)
-    (property "Reference" "C15" (at 30.48 68.58 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Value" "10µF" (at 29.845 66.675 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Footprint" "Capacitor_SMD:CP_Elec_4x3" (at 27.94 67.945 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 27.94 67.945 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid b22b2b81-442c-4753-a75e-ef3ada5d3034))
-    (pin "2" (uuid 189db232-e8a7-4605-81a5-36295f1234f9))
-    (instances
-      (project "RP2040"
-        (path "/00f9855a-60f7-41bf-8963-f0bf2846d4ef"
-          (reference "C15") (unit 1)
         )
       )
     )
@@ -5405,7 +5494,7 @@
     (pin "1" (uuid 2a8fe2d4-2536-4752-ae9d-860711296b74))
     (pin "2" (uuid ee41ae23-c3a5-479a-967c-87b87d17c186))
     (instances
-      (project "RP2040"
+      (project "PowerPiNano"
         (path "/00f9855a-60f7-41bf-8963-f0bf2846d4ef"
           (reference "R22") (unit 1)
         )
@@ -5431,7 +5520,7 @@
     (pin "2" (uuid 721dd0ac-f849-4d1d-8d12-6a4669263d5b))
     (pin "1" (uuid 60b15b6c-184e-4c0c-b2be-7d474e4a975c))
     (instances
-      (project "RP2040"
+      (project "PowerPiNano"
         (path "/00f9855a-60f7-41bf-8963-f0bf2846d4ef"
           (reference "SW1") (unit 1)
         )
@@ -5456,7 +5545,7 @@
     )
     (pin "1" (uuid 415289c8-2bf9-48ed-9731-84ec63dafad5))
     (instances
-      (project "RP2040"
+      (project "PowerPiNano"
         (path "/00f9855a-60f7-41bf-8963-f0bf2846d4ef"
           (reference "TP2") (unit 1)
         )
@@ -5481,35 +5570,9 @@
     )
     (pin "1" (uuid 576a59a4-0e1e-46bf-aed3-13735e8b3fa0))
     (instances
-      (project "RP2040"
+      (project "PowerPiNano"
         (path "/00f9855a-60f7-41bf-8963-f0bf2846d4ef"
           (reference "#PWR029") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Device:C_Small") (at 53.975 67.945 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid c6db192a-eb62-48e0-8a4d-b27bad864be0)
-    (property "Reference" "C16" (at 47.625 68.58 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Value" "10µF" (at 46.99 66.675 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Footprint" "Capacitor_SMD:CP_Elec_4x3" (at 53.975 67.945 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 53.975 67.945 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 75245a34-d98d-47a4-b6ab-9cc8ab85cbe5))
-    (pin "2" (uuid b526e02e-4ff2-49db-a76a-00436c48d939))
-    (instances
-      (project "RP2040"
-        (path "/00f9855a-60f7-41bf-8963-f0bf2846d4ef"
-          (reference "C16") (unit 1)
         )
       )
     )
@@ -5533,7 +5596,7 @@
     (pin "1" (uuid ecfec6ec-b1cc-4637-abf1-48b6e8ccb4f5))
     (pin "2" (uuid a14d0235-6222-446a-b226-1658c960305e))
     (instances
-      (project "RP2040"
+      (project "PowerPiNano"
         (path "/00f9855a-60f7-41bf-8963-f0bf2846d4ef"
           (reference "R9") (unit 1)
         )
@@ -5559,7 +5622,7 @@
     (pin "1" (uuid 3a52e8ea-7652-4292-94ba-1e4bdf74290f))
     (pin "2" (uuid 26beffd1-208a-4a14-be99-afb46d884c39))
     (instances
-      (project "RP2040"
+      (project "PowerPiNano"
         (path "/00f9855a-60f7-41bf-8963-f0bf2846d4ef"
           (reference "D3") (unit 1)
         )
@@ -5584,7 +5647,7 @@
     )
     (pin "1" (uuid cd41f5dd-5fbc-4028-8cf0-5f9b0c2bd362))
     (instances
-      (project "RP2040"
+      (project "PowerPiNano"
         (path "/00f9855a-60f7-41bf-8963-f0bf2846d4ef"
           (reference "#PWR016") (unit 1)
         )
@@ -5610,7 +5673,7 @@
     (pin "1" (uuid e6b6727e-b22d-4b47-a769-912e576e5ae7))
     (pin "2" (uuid e0588b9b-cf15-45cf-b01e-3ab067a89dde))
     (instances
-      (project "RP2040"
+      (project "PowerPiNano"
         (path "/00f9855a-60f7-41bf-8963-f0bf2846d4ef"
           (reference "Y1") (unit 1)
         )
@@ -5637,7 +5700,7 @@
     (pin "2" (uuid 16d1b173-b2e9-4665-be8a-b7f573c06979))
     (pin "3" (uuid 8c1d209c-f751-4ed9-9372-eb16147567b9))
     (instances
-      (project "RP2040"
+      (project "PowerPiNano"
         (path "/00f9855a-60f7-41bf-8963-f0bf2846d4ef"
           (reference "Q8") (unit 1)
         )
@@ -5663,7 +5726,7 @@
     (pin "1" (uuid 67970d92-5ad2-45d7-91f3-a2ea60627aa8))
     (pin "2" (uuid 9e5b4655-8a4b-4ea5-b570-b58319f552f5))
     (instances
-      (project "RP2040"
+      (project "PowerPiNano"
         (path "/00f9855a-60f7-41bf-8963-f0bf2846d4ef"
           (reference "C5") (unit 1)
         )
@@ -5688,7 +5751,7 @@
     )
     (pin "1" (uuid c842eb3e-616e-4e8d-b767-cef8d2a7a15d))
     (instances
-      (project "RP2040"
+      (project "PowerPiNano"
         (path "/00f9855a-60f7-41bf-8963-f0bf2846d4ef"
           (reference "#PWR011") (unit 1)
         )
@@ -5714,7 +5777,7 @@
     (pin "1" (uuid c2a1710d-db65-4865-93b7-c15ce21896bc))
     (pin "2" (uuid b80b652f-d085-41cd-bf4e-cc7571dc29d2))
     (instances
-      (project "RP2040"
+      (project "PowerPiNano"
         (path "/00f9855a-60f7-41bf-8963-f0bf2846d4ef"
           (reference "R10") (unit 1)
         )
@@ -5739,7 +5802,7 @@
     )
     (pin "1" (uuid 6519b825-8bcf-4248-a754-d78a58305f43))
     (instances
-      (project "RP2040"
+      (project "PowerPiNano"
         (path "/00f9855a-60f7-41bf-8963-f0bf2846d4ef"
           (reference "#PWR040") (unit 1)
         )
@@ -5764,7 +5827,7 @@
     )
     (pin "1" (uuid 2123cfa3-ecfd-402b-ba2f-885c533971d6))
     (instances
-      (project "RP2040"
+      (project "PowerPiNano"
         (path "/00f9855a-60f7-41bf-8963-f0bf2846d4ef"
           (reference "TP1") (unit 1)
         )
@@ -5790,7 +5853,7 @@
     (pin "1" (uuid 27b5e4b7-36ae-4791-b054-a3551c23a538))
     (pin "2" (uuid d43980b7-189a-4915-bd2d-ad95fafb6da6))
     (instances
-      (project "RP2040"
+      (project "PowerPiNano"
         (path "/00f9855a-60f7-41bf-8963-f0bf2846d4ef"
           (reference "R2") (unit 1)
         )
@@ -5816,7 +5879,7 @@
     (pin "1" (uuid 59c6fe84-b667-4957-b49c-6f6b579a2c60))
     (pin "2" (uuid e8b5a7d0-6431-4dda-92d5-53ed6affb0be))
     (instances
-      (project "RP2040"
+      (project "PowerPiNano"
         (path "/00f9855a-60f7-41bf-8963-f0bf2846d4ef"
           (reference "C3") (unit 1)
         )
@@ -5841,7 +5904,7 @@
     )
     (pin "1" (uuid 901e1295-6824-419a-8e69-a367f8d05b71))
     (instances
-      (project "RP2040"
+      (project "PowerPiNano"
         (path "/00f9855a-60f7-41bf-8963-f0bf2846d4ef"
           (reference "#PWR09") (unit 1)
         )
@@ -5867,7 +5930,7 @@
     (pin "1" (uuid a4f704f9-7618-45fc-8fce-779cf6f81822))
     (pin "2" (uuid e467f874-7e2e-4fc2-a026-1a45c961836b))
     (instances
-      (project "RP2040"
+      (project "PowerPiNano"
         (path "/00f9855a-60f7-41bf-8963-f0bf2846d4ef"
           (reference "D6") (unit 1)
         )
@@ -5893,7 +5956,7 @@
     (pin "1" (uuid d85f5e94-5637-4052-b196-fb385f85a020))
     (pin "2" (uuid 4f2c89d3-1916-4707-a345-59c8616df7c1))
     (instances
-      (project "RP2040"
+      (project "PowerPiNano"
         (path "/00f9855a-60f7-41bf-8963-f0bf2846d4ef"
           (reference "D2") (unit 1)
         )
@@ -5918,7 +5981,7 @@
     )
     (pin "1" (uuid fb6b6370-7975-4e70-adc6-83537a0da424))
     (instances
-      (project "RP2040"
+      (project "PowerPiNano"
         (path "/00f9855a-60f7-41bf-8963-f0bf2846d4ef"
           (reference "#PWR02") (unit 1)
         )
@@ -5943,7 +6006,7 @@
     )
     (pin "1" (uuid 18db69f9-7d7f-46b2-8cd5-b8662f94d77e))
     (instances
-      (project "RP2040"
+      (project "PowerPiNano"
         (path "/00f9855a-60f7-41bf-8963-f0bf2846d4ef"
           (reference "#PWR05") (unit 1)
         )
@@ -5983,7 +6046,7 @@
     (pin "11" (uuid d443e4e4-fe38-4457-9373-fbbd7e37425e))
     (pin "15" (uuid 99490b36-3961-4d30-ab44-245b20daa0a6))
     (instances
-      (project "RP2040"
+      (project "PowerPiNano"
         (path "/00f9855a-60f7-41bf-8963-f0bf2846d4ef"
           (reference "U4") (unit 1)
         )
@@ -6008,7 +6071,7 @@
     )
     (pin "1" (uuid e844314f-e094-473f-be02-a4f95b40d8ef))
     (instances
-      (project "RP2040"
+      (project "PowerPiNano"
         (path "/00f9855a-60f7-41bf-8963-f0bf2846d4ef"
           (reference "#PWR07") (unit 1)
         )
@@ -6034,7 +6097,7 @@
     (pin "1" (uuid 5777a58d-1e0f-4eda-a600-8898541e9879))
     (pin "2" (uuid c54f01b5-8088-437e-bf5e-24fc280f99ab))
     (instances
-      (project "RP2040"
+      (project "PowerPiNano"
         (path "/00f9855a-60f7-41bf-8963-f0bf2846d4ef"
           (reference "C4") (unit 1)
         )
